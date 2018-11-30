@@ -1,0 +1,809 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <link rel="icon" sizes="180x180" href="../img/favicon.png" type="image/png">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Documentation</title>
+    <link rel="alternate" type="application/rss+xml" title="frittt.com" href="feed/index.html">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
+          type="text/css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/prettify.css">
+    <style type="text/css">
+        .highlight pre code {
+            font-size: inherit;
+            color: #373a3c;
+        }
+
+        pre code {
+            padding: 0;
+            font-size: inherit;
+            color: inherit;
+            background-color: transparent;
+            border-radius: 0;
+        }
+
+        code {
+            padding: .2rem .4rem;
+            font-size: 90%;
+            color: #bd4147;
+            background-color: #f7f7f9;
+            border-radius: .25rem;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper" style="margin:0!important;" >
+    <nav>
+
+        <div class="pull-left">
+            <h1><a href="javascript:"><img src="img/icon.png" alt="Free Documentation Template Icon"/> <span>Documentation</span></a>
+            </h1>
+        </div>
+
+        <div class="pull-right">
+            <a href="" target="_blank" class="btn btn-download"><img src="img/download.png" width="25"
+                                                                                       alt="Download Free Documentation Template"/>
+                Visit Our Page</a>
+        </div>
+
+    </nav>
+    <header>
+        <div class="container">
+            <h2 class="lone-header">CookFinder | Documentation</h2>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <ul class="docs-nav">
+                <li><strong>Getting Started</strong></li>
+                <li><a href="#welcome" class="cc-active">Welcome</a></li>
+                <li><a href="#features" class="cc-active">Features</a></li>
+                <li><a href="#installation" class="cc-active">Installation</a></li>
+                <li><strong>Development</strong></li>
+                <li><a href="#dev-installation" class="cc-active">Installation</a></li>
+                <li><strong>Customization</strong></li>
+                <li><a href="#Sidebar" class="cc-active">Sidebar</a></li>
+                <li><a href="#Utilities" class="cc-active">Bootstrap Utilities</a></li>
+                <li><a href="#timeline" class="cc-active">Timeline</a></li>
+                <li><a href="#cards" class="cc-active">Cards</a></li>
+                <li><a href="#loader" class="cc-active">Loader</a></li>
+                <li><a href="#scroll" class="cc-active">Scroll</a></li>
+
+                <li><strong>Events</strong></li>
+                <li><a href="#Sidebar" class="cc-active">Sidebar</a></li>
+                <li><strong>Support</strong></li>
+                <li><a href="#contact" class="cc-active">Contact</a></li>
+                <li><a href="#sources" class="cc-active">Sources and Credits</a></li>
+            </ul>
+            <div class="docs-content">
+                <h2> Getting Started</h2>
+                <h3 id="welcome"> Welcome</h3>
+                <p>Thank you for purchasing N-Arkalite Responsive Bootstrap 4 Dashboard Admin Template . If you have any questions that are beyond the scope of this help
+                    file, please feel free to post a comment on item page. If you are happy with the theme, please take
+                    a moment to rate it from your downloads page. Thank you so much!</p>
+
+                <h3 id="features"> Features</h3>
+                <p>This theme based on Boostrap 4 framework grid. It's ULTRA RESPONSIVE!!. Suitable for your dashboard
+                    or admin page. It supports mobile screen, tablet screen, medium screen and large screen</p>
+                <ul>
+                    <li>Integrated with the latest Bootstrap Version 4</li>
+                    <li>Support Syntactically Awesome Style Sheets (SASS)</li>
+                </ul>
+                <h3 id="installation">Installation</h3>
+                Required scripts, please note that order matters: 
+                <pre class="prettyprint">
+&lt;script src="js/lib/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/lib/bootstrap.min.js"&gt;&lt;/script&gt;    
+&lt;script src="js/lib/jquery.nicescroll.js"&gt;&lt;/script&gt;
+&lt;script src="js/ncms.min.js"&gt;&lt;/script&gt;
+                </pre>
+                Required stylesheets, please note that order matters: 
+                <pre class="prettyprint">
+&lt;link rel="stylesheet" href="styles/lib/bootstrap.min.css"&gt;
+&lt;link rel="stylesheet" href="styles/ncms.min.css"&gt;
+                </pre>
+                Extended stylesheets, this file includes some additional pages such as site configuration and chart.
+                <pre class="prettyprint">
+&lt;link rel="stylesheet" href="styles/site.min.css"&gt;
+                </pre>
+                Material icons and glyphicons are already included. For others supported Icons here are the list : 
+                <ol>
+                    <li><a href="https://fontawesome.io/" target="_blank">Font Awesome</a></li>
+                    <li><a href="https://icomoon.io/" target="_blank">Icomoon</a></li>
+                    <li><a href="http://foundation.zurb.com/icon-fonts.html" target="_blank">Foundation Icon</a></li>
+                    <li><a href="http://ionicons.com/" target="_blank">Ionicons</a></li>
+                </ol>
+
+                <h2>Development</h3>
+                <h3 id="dev-installation">Installation</h3>
+                <p>If you are interested to customize this theme you can start to develop by following these steps.</p>
+
+                <ol type="1">
+                    <li>Install Ruby, you can download ruby <a href="http://rubyinstaller.org/">here</a></li>
+                    <li>Install SASS, you can download SASS <a href="http://sass-lang.com/install">here</a></li>
+                    <li>Install NodeJS, you can download NodeJS <a href="https://nodejs.org/en/download/">here</a></li>
+                    <li>After install NodeJS you can use Node Package Module (NPM) in your machine. NPM is bundled when
+                        you install NodeJS. After you have NPM in your machine you can install bower by executing this
+                        command
+                        <pre class="prettyprint">$ npm install -g bower</pre>
+                    <li>After that you can install grunt by executing this command
+                        <pre class="prettyprint">npm install -g grunt-cli</pre>
+                    </li>
+                    </li>
+                    <li>Go to your theme folder (in my case it will be put on D:\works\N-CMS\n-cms-theme) and then
+                        execute this command to install packages needed by this theme
+                        <pre class="prettyprint">npm install</pre>
+                        <img src="img/npm-install.png"></li>
+                    <li>Still in your theme folder, execute this command to install web module packages needed by this
+                        theme
+                        <pre class="prettyprint">bower install</pre>
+                    </li>
+                    <li>Last step is to run grunt in your theme folder by execute this command
+                        <pre class="prettyprint">grunt build</pre>
+                    </li>
+
+                </ol>
+                
+                <h2 id="customization">Customization</h2>
+                <h3 id="Sidebar">Sidebar</h3>
+                <p>
+                    If you want to make your sidebar opened you can place these two following class to your element.
+                    <code>expanded</code> on div which has <code>sidebar</code> class like this 
+                    <pre class="prettyprint">
+&lt;div class="sidebar expanded"&gt;
+</pre> and add <code>sidebar-expanded</code> on your body element so it will be like this  <pre class="prettyprint">
+&lt;body class="sidebar-expanded"&gt;
+</pre>
+                </p>
+                <h3 id="Utilities">Bootstrap Utility</h3>
+                <p>
+                    We encouraged you to use <a href="http://v4-alpha.getbootstrap.com/utilities/borders/">Bootstrap
+                    Utilities</a> if you want to make some customization. Bootstrap includes dozens of utilities—classes
+                    with a single purpose to reduce the frequency of highly repetitive declarations. It will helps you
+                    to custom your theme without changing css core too much.
+                </p>
+                <p>We provided some examples how to use it, although we recommended you to go directly to <a
+                        href="http://v4-alpha.getbootstrap.com/utilities/borders/">Bootstrap Utilities</a> page to
+                    understand it more clearly</p>
+                <ul>
+                    <li>Border</li>
+                    <img src="img/border.png"/>
+                    <pre class="prettyprint">
+&lt;img src="..." alt="..." class="rounded"&gt;
+&lt;img src="..." alt="..." class="rounded-top"&gt;
+&lt;img src="..." alt="..." class="rounded-right"&gt;
+&lt;img src="..." alt="..." class="rounded-bottom"&gt;
+&lt;img src="..." alt="..." class="rounded-left"&gt;
+&lt;img src="..." alt="..." class="rounded-circle"&gt;
+        </pre>
+                    <li>Width and height</li>
+                    Easily make an element as wide or as tall as its parent using the <code>.w-100</code> and <code>.h-100</code>
+                    utility classes.
+                    <img src="img/width.png"/>
+                    <pre class="prettyprint">
+&lt;img class="w-100" src="..." alt="Width = 100%"&gt;</pre>
+                    <li>Spacing</li>
+                    <p>
+                        Assign <code>margin</code> or <code>padding</code> to an element or a subset of its sides with
+                        shorthand classes. Includes support for individual properties, all properties, and vertical and
+                        horizontal properties. All classes are multiples on the global default value, <code>1rem.</code>
+                    </p>
+
+                    <p>The classes are named using the format: <code class="highlighter-rouge"><span
+                            class="p">{</span><span class="err">property</span><span class="p">}{</span><span
+                            class="err">sides</span><span class="p">}</span><span class="err">-</span><span
+                            class="p">{</span><span class="err">size</span><span class="p">}</span></code></p>
+
+                    <p>Where <em>property</em> is one of:</p>
+
+                    <ul>
+                        <li><code class="highlighter-rouge">m</code> - for classes that set <code
+                                class="highlighter-rouge">margin</code></li>
+                        <li><code class="highlighter-rouge">p</code> - for classes that set <code
+                                class="highlighter-rouge">padding</code></li>
+                    </ul>
+
+                    <p>Where <em>sides</em> is one of:</p>
+
+                    <ul>
+                        <li><code class="highlighter-rouge">t</code> - for classes that set <code
+                                class="highlighter-rouge">margin-top</code> or <code class="highlighter-rouge">padding-top</code>
+                        </li>
+                        <li><code class="highlighter-rouge">b</code> - for classes that set <code
+                                class="highlighter-rouge">margin-bottom</code> or <code class="highlighter-rouge">padding-bottom</code>
+                        </li>
+                        <li><code class="highlighter-rouge">l</code> - for classes that set <code
+                                class="highlighter-rouge">margin-left</code> or <code class="highlighter-rouge">padding-left</code>
+                        </li>
+                        <li><code class="highlighter-rouge">r</code> - for classes that set <code
+                                class="highlighter-rouge">margin-right</code> or <code class="highlighter-rouge">padding-right</code>
+                        </li>
+                        <li><code class="highlighter-rouge">x</code> - for classes that set both <code
+                                class="highlighter-rouge">*-left</code> and <code
+                                class="highlighter-rouge">*-right</code></li>
+                        <li><code class="highlighter-rouge">y</code> - for classes that set both <code
+                                class="highlighter-rouge">*-top</code> and <code
+                                class="highlighter-rouge">*-bottom</code></li>
+                        <li><code class="highlighter-rouge">a</code> - for classes that set a <code
+                                class="highlighter-rouge">margin</code> or <code
+                                class="highlighter-rouge">padding</code> on all 4 sides of the element
+                        </li>
+                    </ul>
+
+                    <p>Where <em>size</em> is one of:</p>
+
+                    <ul>
+                        <li><code class="highlighter-rouge">0</code> - for classes that eliminate the <code
+                                class="highlighter-rouge">margin</code> or <code
+                                class="highlighter-rouge">padding</code> by setting it to <code
+                                class="highlighter-rouge">0</code></li>
+                        <li><code class="highlighter-rouge">1</code> - (by default) for classes that set the <code
+                                class="highlighter-rouge">margin</code> or <code
+                                class="highlighter-rouge">padding</code> to <code
+                                class="highlighter-rouge">$spacer-x</code> or <code
+                                class="highlighter-rouge">$spacer-y</code></li>
+                        <li><code class="highlighter-rouge">2</code> - (by default) for classes that set the <code
+                                class="highlighter-rouge">margin</code> or <code
+                                class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer-x *
+                            1.5</code> or <code class="highlighter-rouge">$spacer-y * 1.5</code></li>
+                        <li><code class="highlighter-rouge">3</code> - (by default) for classes that set the <code
+                                class="highlighter-rouge">margin</code> or <code
+                                class="highlighter-rouge">padding</code> to <code class="highlighter-rouge">$spacer-x *
+                            3</code> or <code class="highlighter-rouge">$spacer-y * 3</code></li>
+                    </ul>
+
+                    <p>(You can add more sizes by adding entries to the <code class="highlighter-rouge">$spacers</code>
+                        Sass map variable.)</p>
+
+                    <p>Here are some representative examples of these classes:</p>
+
+                    <pre class="prettyprint">
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.ml-1 {
+  margin-left: $spacer-x !important;
+}
+
+.px-2 {
+  padding-left: ($spacer-x * 1.5) !important;
+  padding-right: ($spacer-x * 1.5) !important;
+}
+
+.p-3 {
+  padding: ($spacer-y * 3) ($spacer-x * 3) !important;
+}
+</pre>
+                </ul>
+                <p>Please visit <a href="http://v4-alpha.getbootstrap.com/utilities/borders/">Bootstrap Utilities</a>
+                    for more information.</p>
+                <h3 id="timeline">Timeline Page</h3>
+                <p>We provide a timeline page, this is an example how you can use it : </p>
+                <img src="img/timeline.png"/> <br/>
+                <pre class="prettyprint">
+&lt;div class="timeline-group"&gt;
+    &lt;h3 class="timeline-year"&gt;2015&lt;/h3&gt;
+    &lt;div class="timeline-item"&gt;
+        &lt;div class="timeline-icon"&gt;&lt;i class="material-icons"&gt;description&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;h4 class="timeline-date"&gt;December 24 | 12.51 PM&lt;/h4&gt;
+        &lt;div class="card"&gt;
+            &lt;div class="card-header"&gt;
+                &lt;div class="media"&gt;
+                    &lt;div class="media-left"&gt;
+                        &lt;a href="#"&gt;
+                            &lt;img class="media-object rounded-circle" src="/img/avatar.jpg" alt="Generic placeholder image" style="width:40px;height:40px;"&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;div class="media-body"&gt;
+                        &lt;h4 class="media-heading title-timeline-author"&gt;Amara Nisa&lt;/h4&gt;&lt;span class="title-timeline-type text-muted"&gt;posted a new blog&lt;/span&gt;
+                        &lt;div class="float-md-right card-header-location"&gt;
+                            &lt;i class="material-icons text-muted title-timeline-location"&gt;location_on&lt;/i&gt;
+                            &lt;a href="#" class="text-muted title-timeline-location"&gt;Merseyside&lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;small class="text-muted title-timeline-active"&gt;Active 7 mins ago&lt;/small&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;img src="img/pict11.jpg" alt="" class="mb-1 w-100" /&gt;
+            &lt;div class="card-block"&gt;
+                &lt;h4 class="card-title"&gt;Office Annual Meeting&lt;/h4&gt;
+                &lt;div class="card-text"&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                &lt;/div&gt;
+                &lt;a href="#" class="float-xs-right mt-1"&gt;Read More&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="card-footer"&gt;
+                &lt;ul class="list-inline timeline-meta-link mt-1 text-muted"&gt;
+                    &lt;li class="list-inline-item"&gt;&lt;i class="icon ion-heart timeline-footer-link"&gt;&lt;/i&gt;&lt;a href="#" class="text-muted timeline-footer-link"&gt; 3465&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="list-inline-item"&gt;&lt;i class="icon ion-eye timeline-footer-link"&gt;&lt;/i&gt;&lt;a href="#" class="text-muted timeline-footer-link"&gt; 4476&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="list-inline-item"&gt;&lt;i class="fa fa-user timeline-footer-link" aria-hidden="true"&gt;&lt;/i&gt;&lt;a href="#" class="text-muted timeline-footer-link"&gt; Admin&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="list-inline-item"&gt;&lt;i class="icon ion-edit timeline-footer-link"&gt;&lt;/i&gt;&lt;a href="#" class="text-muted timeline-footer-link"&gt; Edit&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+      </pre>
+
+
+                <h3 id="cards">Cards</h3>
+                We provided a lot of cards you can use
+                <ul>
+                    <li>Statistic Success Card</li>
+                    <img src="img/card-success.png"/>
+                    <pre class="prettyprint">
+&lt;div class="card statistic-card success"&gt;
+  &lt;div class="card-block"&gt;
+    &lt;i class="material-icons"&gt;monetization_on&lt;/i&gt;
+    &lt;div class="stats-counter"&gt;
+      &lt;h1 class="count-number"&gt;21.5M $&lt;/h1&gt;
+      &lt;p&gt;Profit&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+                    <li>Statistic Purple Card</li>
+                    <img src="img/card-purple.png"/>
+                    <pre class="prettyprint">
+&lt;div class="card statistic-card purple"&gt;
+  &lt;div class="card-block"&gt;
+    &lt;i class="material-icons"&gt;shopping_cart&lt;/i&gt;
+    &lt;div class="stats-counter"&gt;
+      &lt;h1 class="count-number"&gt;152&lt;/h1&gt;
+      &lt;p&gt;New Order&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+                    <li>Statistic Warning Card</li>
+                    <img src="img/card-warning.png"/>
+                    <pre class="prettyprint">
+&lt;div class="card statistic-card warning"&gt;
+  &lt;div class="card-block"&gt;
+    &lt;i class="material-icons"&gt;show_chart&lt;/i&gt;
+    &lt;div class="stats-counter"&gt;
+      &lt;h1 class="count-number"&gt;9623&lt;/h1&gt;
+      &lt;p&gt;Sales&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+
+
+                    <li>Statistic Danger Card</li>
+                    <img src="img/card-danger.png"/>
+                    <pre class="prettyprint">
+&lt;div class="card statistic-card danger"&gt;
+  &lt;div class="card-block"&gt;
+    &lt;i class="material-icons"&gt;feedback&lt;/i&gt;
+    &lt;div class="stats-counter"&gt;
+      &lt;h1 class="count-number"&gt;368&lt;/h1&gt;
+      &lt;p&gt;New Feedback&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+                    <li>Reverse Card</li>
+                    you can also add <code class="prettyprint">.reverse</code> class combined with color you want such as <code class="prettyprint">.card-warning</code> if you want to reverse the content.
+                    <img src="img/card-reverse.png"/>
+                    <pre class="prettyprint">
+&lt;div class="card statistic-card reverse card-warning"&gt;
+    &lt;div class="card-block"&gt;
+        &lt;div class="stats-counter"&gt;
+            &lt;h2 class="count-number"&gt;368&lt;/h2&gt;
+            &lt;p&gt;New Feedback&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;i class="material-icons"&gt;feedback&lt;/i&gt;
+    &lt;/div&gt;
+&lt;/div&gt; </pre>
+                    <li>Reminder Card</li>
+                    <img src="img/card-reminder.png"/>
+                    <pre class="prettyprint">
+&lt;div class="card reminder"&gt;
+    &lt;div class="card-header no-border-bottom"&gt;
+        &lt;h4 class="card-title"&gt;Reminder&lt;/h4&gt;
+        &lt;div class="bookmark-icon"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card-block"&gt;
+        &lt;p&gt;
+            Pick the day. Enjoy it - to the hilt. The day as it comes. People as they come... The past, I think, has helped me appreciate the present, and I don't want to spoil any of it by fretting about the future.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+
+                    <li>Card With Header</li>
+                    You can also add header on your card by adding <code>.card-header</code> to your header element.
+                    <br/>
+                    <img src="img/card-header.png"/> <br/>
+
+
+                    <pre class="prettyprint">
+&lt;div class="card tasks-card"&gt;
+    &lt;div class="card-header"&gt;
+        &lt;h4&gt;Tasks&lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div class="card-block"&gt;
+        &lt;ul class="list-unstyled mb-0 v-scroll" style="overflow-y: hidden; outline: none;" tabindex="5001"&gt;
+            &lt;li class="mb-2"&gt;
+                &lt;div class="media"&gt;
+                    &lt;label class="custom-control custom-checkbox media-left"&gt;
+                        &lt;input type="checkbox" checked="checked" class="custom-control-input"&gt;
+                        &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;div class="media-body"&gt;
+                        &lt;h5&gt;Schedule Meeting&lt;/h5&gt; Opportunity for new customers
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="mb-2"&gt;
+                &lt;div class="media"&gt;
+                    &lt;label class="custom-control custom-checkbox media-left"&gt;
+                        &lt;input type="checkbox" checked="checked" class="custom-control-input"&gt;
+                        &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;div class="media-body"&gt;
+                        &lt;h5&gt;Upload files to servers&lt;/h5&gt; Files must be shared to all board members
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="mb-2"&gt;
+                &lt;div class="media"&gt;
+                    &lt;label class="custom-control custom-checkbox media-left"&gt;
+                        &lt;input type="checkbox" class="custom-control-input"&gt;
+                        &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;div class="media-body"&gt;
+                        &lt;h5&gt;Monthly sales report&lt;/h5&gt; As soon as possible
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="mb-2"&gt;
+                &lt;div class="media"&gt;
+                    &lt;label class="custom-control custom-checkbox media-left"&gt;
+                        &lt;input type="checkbox" class="custom-control-input"&gt;
+                        &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;div class="media-body"&gt;
+                        &lt;h5&gt;Career applicants&lt;/h5&gt; Review and forward career aplications
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;div class="media"&gt;
+                    &lt;label class="custom-control custom-checkbox media-left"&gt;
+                        &lt;input type="checkbox" class="custom-control-input"&gt;
+                        &lt;span class="custom-control-indicator"&gt;&lt;/span&gt;
+                    &lt;/label&gt;
+                    &lt;div class="media-body"&gt;
+                        &lt;h5&gt;Quarter 3 Reports&lt;/h5&gt; Send Q3 Reports to CEO
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+            <li>Card With Image Inside Header and Additional Information on Footer</li>
+            To insert image into your card you need to insert your <code>img</code> tag inside <code>.card-header</code> element.
+            You also can add additional information inside yout footer on your card by adding <code>.card-footer</code> to your card element.
+            <br/>
+                    <img src="img/card-footer.png"/> <br/>
+            <pre class="prettyprint">
+&lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;
+        &lt;div class="media"&gt;
+            &lt;div class="media-left"&gt;
+                &lt;a href="#"&gt;
+                    &lt;img class="media-object rounded-circle" src="/img/nadya-avatar.jpg" alt="Generic placeholder image" style="width:40px;height:40px;"&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="media-body"&gt;
+                &lt;h5 class="media-heading"&gt;Nadya Nainggolan&lt;/h5&gt;
+                &lt;small class="text-muted"&gt;3 days ago - 23 min&lt;/small&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;img class="card-img-top mt-1" src="/img/women-in-office.jpg" alt="Card image cap"&gt;
+    &lt;div class="card-block"&gt;
+        &lt;h4 class="card-title"&gt;Work In Office&lt;/h4&gt;
+        &lt;div class="card-text"&gt;
+            When these remote personalities work remotely they’re very happy. 43% of them say they love their job. But when remote personalities have to go work . . .                                        
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        &lt;i class="material-icons"&gt;location_on&lt;/i&gt; &lt;a href="#" class="text-muted"&gt;San Fransisco&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+            <li>Card With Image Header and Image Footer as Background</li>
+            You can insert your favourite images into header and footer as a background of your card
+            <br/>
+            <img src="img/card-image-as-background.png"/> <br/>
+            <pre class="prettyprint">
+&lt;div class="card"&gt;
+    &lt;div class="card-image-header as-background" style="background-image: url(img/4.png); height: 140px;"&gt;
+        &lt;h4&gt;Paolo&lt;/h4&gt;
+        &lt;small class="text-muted"&gt;3 days ago - 23 min&lt;/small&gt;
+        &lt;img src="/img/paolo-avatar.jpg" alt="Generic placeholder image" width="50" height="50"&gt;
+    &lt;/div&gt;
+    &lt;div class="card-block"&gt;
+        &lt;h4 class="card-title"&gt;About Me&lt;/h4&gt;
+        &lt;div class="card-text"&gt;
+            UX Design is an analytical and technical field. UI Design is closer to graphic design, though the responsibilities are somewhat more complex . . . 
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        &lt;i class="material-icons"&gt;location_on&lt;/i&gt; &lt;a href="#" class="text-muted"&gt;San Fransisco&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="card-image-footer"&gt;
+        &lt;img src="/img/pict1.jpg" alt="Card image cap"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+            <li>Profile Card</li>
+            We also provide a profile card that you can use easily by adding <code>.profile-card</code> into your card element.
+            <br/>
+            <img src="img/card-profile.png"/> <br/>
+            <pre class="prettyprint">
+&lt;div class="card profile-card px-0"&gt;
+    &lt;div class="card-profile-header" style="background-image:url(img/personal-desk.jpg);width:100%;height:200px;background-size:cover"&gt;
+    &lt;/div&gt;
+    &lt;div class="card-block"&gt;
+        &lt;img class="profile-picture" src="img/avatar.jpg" alt="Emily Burnt" width="100" height="100"&gt;
+        &lt;h4&gt;
+            &lt;a href="profile/index.html"&gt;Amara Nisa&lt;/a&gt;
+        &lt;/h4&gt;
+        &lt;p&gt;Hi, it's been pleasure to meet you. I'm Amara the Chief Executive Officer at Arkalite. We hope you enjoy our page. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis
+            dis parturient ...
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer text-xs-center"&gt;
+        &lt;ul class="list-inline"&gt;
+            &lt;li class="list-inline-item"&gt;
+                &lt;a href="#userModal" class="aku" data-toggle="modal"&gt;
+            Following
+            &lt;h5 class="ali"&gt;375&lt;/h5&gt;
+        &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="list-inline-item"&gt;
+                &lt;a href="#userModal" class="aku" data-toggle="modal"&gt;
+            Friends
+            &lt;h5 class="ali"&gt;845&lt;/h5&gt;
+        &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="list-inline-item"&gt;
+                &lt;a href="#userModal" class="aku" data-toggle="modal"&gt;
+            Favorites
+            &lt;h5 class="ali"&gt;150&lt;/h5&gt;
+        &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+
+                </ul>
+                <h3 id="loader">Loader</h3>
+                <p>
+                    We are using using <a href="http://github.hubspot.com/pace/docs/welcome/">jQuery Pace</a> as our default page loader. If you want to use it as your page loader you need to include these 2 files :
+                    <p><code>
+                        &lt;script src="js/lib/pace.min.js"&gt;&lt;/script&gt; <br/>
+                        &lt;link rel="stylesheet" href="styles/lib/pace.min.css"&gt;
+                    </code></p>
+                    And add <code>.using-loader</code> inside your <code>body</code> element.                    
+                </p>
+                <p>However if you decide to not used page loader you can remove all those required files and remove <code>.using-loader</code> on your <code>body</code> element.
+                <h3 id="scroll">Scroll</h3>
+                We included <a href="https://github.com/inuyaksa/jquery.nicescroll">jQuery.NiceScroll</a> as our default scroll.
+                You have 2 class you can use for your scroll : 
+                <ol>
+                    <li><code>.v-scroll</code> is used if you want to show only vertical scroll and disable horizontal scroll</li>
+                    <li><code>.nice-scroll</code> is used if you want to show scroll both horizontally and vertically</li>
+                </ol>
+                Following is the example of how to usage <code>.v-scroll</code> in a card.
+<pre class="prettyprint">
+&lt;div class="card chats-card"&gt;
+    &lt;div class="card-header"&gt;
+        &lt;h4&gt;Chats&lt;/h4&gt;
+        &lt;span class="tag tag-pill tag-info"&gt;2&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="card-block"&gt;
+        &lt;ul class="media-list v-scroll mb-0" style="overflow-y: hidden; outline: none;" tabindex="5004"&gt;
+            &lt;li class="media left-message mb-2"&gt;
+                &lt;div class="media-left"&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="media-object rounded-circle" src="img/amara-avatar.jpg" alt="user2" height="42" width="42"&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="media-body"&gt;
+                    &lt;h5&gt;Amara Nisa&lt;/h5&gt;
+                    &lt;small class="text-muted"&gt;1 day ago&lt;/small&gt;
+                &lt;/div&gt;
+                &lt;div class="text-xs-right chat-bubble"&gt;
+                    Hi Paolo, could you please arrange me a meeting with technical team. There are some feedbacks from our clients and I want it to be done in few weeks. This is really important feedback from important users.
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="media right-message"&gt;
+                &lt;div class="media-body text-xs-right"&gt;
+                    &lt;h5&gt;Paolo Aurelio&lt;/h5&gt;
+                    &lt;small class="text-muted"&gt;1 day ago&lt;/small&gt;
+                &lt;/div&gt;
+                &lt;div class="media-right"&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img class="media-object rounded-circle" src="img/paolo-avatar.jpg" alt="user2" height="42" width="42"&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="text-xs-left chat-bubble"&gt;
+                    Hi Amara, sure why not. I will arrange a meeting between you and technical team as soon as possible. I will send an invitation by email and I will let you know the place and the time. The meeting will be held at your office. The technical director also
+                    will be attending the meeting.
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;hr class="mt-2 mb-2"&gt;
+        &lt;form name="chat" method="post"&gt;
+            &lt;div class="input-group"&gt;
+                &lt;input type="text" class="form-control" placeholder="type your message here"&gt;
+                &lt;span class="input-group-btn"&gt;&lt;button class="btn btn-info"&gt;&lt;i class="fa fa-paper-plane" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                </pre>
+                here is the result of code above : 
+                <img src="img/scroll.png" />
+                <br/>
+                <h2 id="Events">Events</h3>
+                    <h3 id="Sidebar">Sidebar</h3>
+                    <p>
+                        Sidebar has 2 events to handle :
+                    <ol>
+                        <li>Collapsed</li>
+                        <li>Expanded</li>
+                    </ol>
+                    </p>
+                    <p>
+                        If you have some elements in your body you have to make sure that it will be integrated with
+                        sidebar's events. For example in
+                        Dashboard 1 we have chart inside our content. Every time we expand and collapse sidebar menu we
+                        need to resize the chart so
+                        its width will be always like what we want.
+                    </p>
+                    <p>Those 2 events are <code>expanded.nc.sidebar</code> and <code>collapsed.nc.sidebar</code></p>
+                    <p>Following is the example code on how to use the sidebar event : </p>
+                    <p> This example is taken from <code>index.html</code> file, you can find this example at the bottom
+                        of the page.
+                        Imagine we already have chart element as following : </p>
+                    <pre class="prettyprint">
+var chart = new Chartist.Line('.ct-chart', {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Des'],
+    series: [
+        [23, 42, 50, 20, 48, 90, 60, 41, 70, 80, 36, 60],
+        [35, 15, 65, 42, 25, 65, 77, 100, 20, 58, 60, 45]
+    ]
+}, {
+    low: 0,
+    high: 100,
+    lineSmooth: false,
+    showArea: false,
+    showPoint: true,
+    fullWidth: true,
+    axisX: {
+        showGrid: false
+    },
+    axisY: {
+        showGrid: false
+    }
+});
+</pre>
+                    <p>We need to resize this chart every time we expand or collapse menu. So we need to write this
+                        following code to handle
+                        this case.</p>
+                    <pre class="prettyprint">
+$('.sidebar').on('expanded.nc.sidebar', function(e) {
+    chart.update(); // resize chart if sidebar is expanded
+});   
+
+$('.sidebar').on('collapsed.nc.sidebar', function(e) {
+    chart.update(); // resize chart if sidebar is collapsed
+});     
+</pre>
+
+                    <h2 id="support">Support</h3>
+                        <h3 id="contact">Contact</h3>
+                        <p>
+                            Once again, thank you so much for purchasing this theme. Please take a moment to rate it
+                            from your Downloads page.
+                        </p>
+                        <h4>Need support?</h4>
+
+                        <p>For support contact me using the form on my profile page with subject [ThemeForest Support]
+                            Template name, or submit a comment on item page. You will receive an answer within 24-48
+                            hours (working days) GMT +7.</p>
+                        <ul>
+                            <li>I only provide support for fixing bugs or small issues on my items.</li>
+                            <li>I don't provide free support for additional custom modifications to the items.</li>
+                            <li>Please provide your site link, screenshots and other information about your issue.</li>
+                            <li><a href="http://themeforest.net/page/item_support_policy" rel="nofollow"><strong>Envato
+                                support terms</strong></a></li>
+                        </ul>
+                        <h4>Need customization or availability for freelance projects?</h4>
+                        <p>Just send an email via profile page form; please don't forget to specify</p>
+                        <ul>
+                            <li>if you are a company, agency or private user</li>
+                            <li>all the information about your projects, needs, site urls, project sheet, etc..</li>
+                            <li>from which country you are</li>
+                            <li>if you have a deadline</li>
+                            <li>if you have basic knowledge of HTML , CSS, JS, PHP</li>
+                        </ul>
+                        <h3 id="sources">Sources and Credits</h3>
+                        <p>
+                            I've used the following images, icons or other files as listed. For the JS listed below, you can find the more documentation on the relative sites.
+                        </p>
+                        <ul>
+                            <li><a href="https://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a></li>                            
+                            <li><a href="http://ckeditor.com/" target="_blank">Ckeditor</a></li>
+                            <li><a href="https://datatables.net/" target="_blank">Datatable</a></li>
+                            <li><a href="https://eonasdan.github.io/bootstrap-datetimepicker/" target="_blank">Datetimepicker</a></li>
+                            <li><a href="http://fontawesome.io/" target="_blank">Fontawesome</a></li>
+                            <li><a href="http://ionicons.com/" target="_blank">Ionicons</a></li>
+                            <li><a href="https://jquery.com/" target="_blank">Jquery</a></li>
+                            <li><a href="https://material.io/icons/" target="_blank">Material Design Icons</a></li>
+                            <li><a href="http://momentjs.com/" target="_blank">Moment</a></li>
+                            <li><a href="https://select2.github.io/" target="_blank">Select2</a></li>
+                            <li><a href="http://tether.io/" target="_blank">Tether</a></li>
+                            <li><a href="http://github.hubspot.com/pace/docs/welcome/" target="_blank">jQuery Pace</a></li>
+                            <li><a href="https://www.tinymce.com/" target="_blank">Tinymce</a></li>
+                            <li><a href="https://vegas.jaysalvat.com/" target="_blank">Vegas</a></li>
+                            <li><a href="http://gruntjs.com/" target="_blank">Grunt JS</a></li>
+                            <li><a href="https://bower.io/" target="_blank">Bower</a></li>
+                            <li><a href="https://www.npmjs.com/" target="_blank">NPM</a></li>
+                            <li><a href="https://github.com/markgoodyear/scrollup" target="_blank">Scroll Up</a></li>
+                            <li><a href="https://morrisjs.github.io/morris.js/" target="_blank">Morris JS</a></li>
+                            <li><a href="http://www.flotcharts.org/" target="_blank">Flot</a></li>
+                            <li><a href="https://gionkunz.github.io/chartist-js/" target="_blank">Chartist</a></li>
+                            <li><a href="https://chartjs.org/" target="_blank">Chart JS</a></li>                            
+                        </ul>
+
+
+                        <a href="http://arkalite.id/"><img src="img/arkalite.png" width="300px"/></a>
+            </div>
+        </div>
+    </section>
+    <section class="vibrant centered">
+        <div class="">
+            <h4> Thanks to <a href="" target="_blank">freepik</a> who provides this
+                documentation template.</h4>
+        </div>
+    </section>
+    <footer>
+        <div class="">
+            <p> &copy; Copyright Cookfinder. All Rights Reserved.</p>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/prettify/prettify.js"></script>
+<script src="../../google-code-prettify.googlecode.com/svn/loader/run_prettify174a.html?lang=css&amp;skin=sunburst"></script>
+<script src="js/layout.js"></script>
+</body>
+
+
+</html>

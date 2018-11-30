@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from fazar.bitbucket.io/ui-general.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Jul 2017 11:44:05 GMT -->
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>N-Arkalite</title>
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link href="../cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+    
+    
+    <link rel="stylesheet" href="styles/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/ncms.min.css">
+    <link rel="stylesheet" href="styles/site.min.css">
+    <link rel="stylesheet" href="styles/lib/pace.min.css">
+    
+     <link rel="stylesheet" href="styles/lib/icomoon.css" />
+    <link rel="stylesheet" href="styles/lib/jquery.scrollUp.css" />
+
+    <!-- <link rel="stylesheet" href="styles/lib/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="styles/lib/ionicons.min.css"> -->
+    <!-- <link rel="stylesheet" href="styles/lib/foundation-icons.css"> -->
+
+</head>
+
+<body class="dashboard warning-theme danger-complement primary-logo-demo using-loader">
+    <!-- start of navbar -->
+    <nav class="navbar navbar-fixed-top">
+        <!-- start of navbar-sidebar -->
+        <div class="navbar-sidebar">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/primary-logo.png" alt="n-cms" class="primary-logo" />
+                <img src="img/danger-logo.png" alt="n-cms" class="danger-logo" />
+                <img src="img/success-logo.png" alt="n-cms" class="success-logo" />
+                <img src="img/warning-logo.png" alt="n-cms" class="warning-logo" />
+                <img src="img/info-logo.png" alt="n-cms" class="info-logo" />
+                <img src="img/purple-logo.png" alt="n-cms" class="purple-logo" />
+                <h1 class="hidden-sm-down">Arkalite</h1>
+            </a>
+            <a class="sidebar-toggle" href="#" data-toggle="sidebar">&#9776;</a>
+        </div>
+        <!-- end of navbar-sidebar -->
+        <!-- start of main menu -->
+        <ul class="nav navbar-nav float-xs-left main-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+        </ul>
+        <!-- end of main menu -->
+        <!-- end of primary menu -->
+        <div class="float-xs-right secondary-menu">
+            <ul class="nav navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link use-icon" id="message" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="tag">6</span><i class="material-icons">mail_outline</i></a>
+                    <div class="dropdown-menu dropdown-menu-right notification-list nice-scroll" aria-labelledby="message">
+                        <div class="outer-triangle-right"></div>
+                        <div class="header">
+                            <h4 class="text-xs-center">Messages</h4>
+                        </div>
+                        <ul class="list-unstyled nice-scroll">
+                            <li>
+                                <div class="media">
+                                    <a href="#">
+                                        <div class="media-left">
+                                            <img class="media-object rounded-circle" src="img/nadya-avatar.jpg" alt="user2">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="date"><small class="d-inline text-muted">30 Nov</small>
+                                            </div>
+                                            <h5>Nadya Amanda</h5>
+                                            <span class="title">Invitation Meeting With Product Manager</span>
+                                            <span class="content">Hi Amara, I would like to invite you to a meeting with product manager at our HQ</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media">
+                                    <a href="#">
+                                        <div class="media-left">
+                                            <img class="media-object rounded-circle" src="img/paolo-avatar.jpg" alt="user2">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="date"><small class="d-inline text-muted">28 Nov</small>
+                                            </div>
+                                            <h5>Paolo Aurelio</h5>
+                                            <span class="title">Technical Document</span>
+                                            <span class="content">Could you please send me a technical document from our last meeting</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media">
+                                    <a href="#">
+                                        <div class="media-left">
+                                            <img class="media-object rounded-circle" src="img/jonski-avatar.jpg" alt="user2">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="date"><small class="d-inline text-muted">25 Nov</small>
+                                            </div>
+                                            <h5>Jonski Sorgki</h5>
+                                            <span class="title">Announcement</span>
+                                            <span class="content">Dear all, I would like to thank all of you for making my dream come true</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media">
+                                    <a href="#">
+                                        <div class="media-left">
+                                            <img class="media-object rounded-circle" src="img/ragnar-avatar.jpg" alt="user2">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="date"><small class="d-inline text-muted">9 Nov</small>
+                                            </div>
+                                            <h5>Ragnar Klavan</h5>
+                                            <span class="title">Financial Report Q1</span>
+                                            <span class="content">Dear Amara, I will be out of town for a while, you can contact me via email </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media">
+                                    <a href="#">
+                                        <div class="media-left">
+                                            <img class="media-object rounded-circle" src="img/ragnar-avatar.jpg" alt="user2">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="date"><small class="d-inline text-muted">9 Nov</small>
+                                            </div>
+                                            <h5>Ragnar Klavan</h5>
+                                            <span class="title">Financial Report Q2</span>
+                                            <span class="content">Dear Amara, I will be out of town for a while, you can contact me via email </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media">
+                                    <a href="#">
+                                        <div class="media-left">
+                                            <img class="media-object rounded-circle" src="img/ragnar-avatar.jpg" alt="user2">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="date"><small class="d-inline text-muted">9 Nov</small>
+                                            </div>
+                                            <h5>Ragnar Klavan</h5>
+                                            <span class="title">Financial Report Q3</span>
+                                            <span class="content">Dear Amara, I will be out of town for a while, you can contact me via email </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media">
+                                    <a href="#">
+                                        <div class="media-left">
+                                            <img class="media-object rounded-circle" src="img/ragnar-avatar.jpg" alt="user2">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="date"><small class="d-inline text-muted">9 Nov</small>
+                                            </div>
+                                            <h5>Ragnar Klavan</h5>
+                                            <span class="title">Financial Report Q4</span>
+                                            <span class="content">Dear Amara, I will be out of town for a while, you can contact me via email </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="py-1 footer">
+                            <a href="#">See All Messages</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link use-icon" id="notification" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="tag">8</span><i class="material-icons">notifications</i></a>
+
+                    <div class="dropdown-menu dropdown-menu-right notification-list nice-scroll" aria-labelledby="notification">
+                        <div class="outer-triangle-right"></div>
+                        <div class="header">
+                            <h4 class="text-xs-center">Notifications</h4>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="media-object rounded-circle" src="img/paolo-avatar.jpg" alt="user2">
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="#">
+                                            <h5 class="d-inline">Paolo Aurelio</h5><span> replied to your comment on his post</span>
+                                            <div class="time"><i class="material-icons text-muted">access_time</i> <small class="d-inline text-muted">2 hours ago</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="close">
+                                    <a href="#"><i class="material-icons">close</i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="media-object rounded-circle" src="img/nadya-avatar.jpg" alt="user2">
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="#">
+                                            <h5 class="d-inline">Nadya Amanda</h5><span> posted on your wall</span>
+                                            <div class="time"><i class="material-icons text-muted">access_time</i> <small class="d-inline text-muted">7 days ago</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="close">
+                                    <a href="#"><i class="material-icons">close</i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="media-object rounded-circle" src="img/jonski-avatar.jpg" alt="user2">
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="#">
+                                            <h5 class="d-inline">Jonski Sorgki</h5> liked your photo
+                                            <div class="time"><i class="material-icons text-muted">access_time</i> <small class="d-inline text-muted">2 weeks ago</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="close">
+                                    <a href="#"><i class="material-icons">close</i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img class="media-object rounded-circle" src="img/ragnar-avatar.jpg" alt="user2">
+                                    </div>
+                                    <div class="media-body">
+                                        <a href="#">
+                                            <h5 class="d-inline">Ragnar Klavan</h5> add a new task
+                                            <div class="time"><i class="material-icons text-muted">access_time</i> <small class="d-inline text-muted">9 November at 07:00</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="close">
+                                    <a href="#"><i class="material-icons">close</i></a>
+                                </div>
+                            </li>
+                            <li class="footer"><a href="#">See All Messages</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link use-icon" href="#"><i class="material-icons">chat_bubble</i></a>
+                </li>
+            </ul>
+            <div class="dropdown show d-inline user-menu">
+                <a class="btn dropdown-toggle" href="index.html" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="media d-inline">
+                        <div class="media-left">
+                            <img class="media-object rounded-circle" src="img/amara-avatar.jpg" alt="Generic placeholder image" width="30" height="30">
+                        </div>
+                        <div class="media-right hidden-sm-down text-xs-left">
+                            <h5 class="media-heading mb-0">Amara</h5>
+                            <small>Administrator</small>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#"><i class="material-icons align-middle mr-1">settings</i>Account</a>
+                    <a class="dropdown-item" href="#"><i class="material-icons align-middle mr-1">person</i>Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="material-icons align-middle mr-1">power_settings_new</i>Logout</a>
+                </div>
+            </div>
+            <a class="main-menu-toggle" href="#" data-toggle="main-menu"><i class="material-icons">view_list</i></a>
+        </div>
+        <!-- end of secondary menu -->
+        <form class="float-md-right navbar-search">
+            <div class="float-xs-right input-with-icon mb-1">
+                <i class="material-icons">search</i>
+                <input type="search" class="form-control" placeholder="Search" />
+            </div>
+        </form>
+    </nav>
+    <!-- end of navbar -->
+    <!--Start of Sidebar-->
+    <div class="sidebar">
+        <ul class="nav nav-sidebar">
+            <li class="has-submenu">
+                <a href="javascript:;">
+                    <i class="material-icons">dashboard</i><span>Dashboard</span>
+                </a>
+                <ul class="nav sub-menu">
+                    <li><a href="index.html">Dashboard 1</a>
+                    </li>
+                    <li><a href="index1.html">Dashboard 2</a>
+                    </li>
+                    <li><a href="index2.html">Dashboard 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:;">
+                    <i class="material-icons">insert_chart</i><span>Charts</span>
+                </a>
+                <ul class="nav sub-menu">
+                    <li><a href="chartist-js.html">Chartist JS</a>
+                    </li>
+                    <li><a href="chart-js.html">Chart JS</a>
+                    </li>
+                    <li><a href="flot-js.html">Flot JS</a>
+                    </li>
+                    <li><a href="morris-js.html">Morris JS</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <span class="tag">2</span>
+                <a href="javascript:;">
+                    <i class="material-icons">mail_outline</i><span>Mailbox</span>
+                </a>
+                <ul class="nav sub-menu">
+                    <li><a href="compose.html">Compose</a>
+                    </li>
+                    <li><a href="mailbox.html">Inbox</a>
+                    </li>
+                    <li><a href="mailbox-reply.html">Reply</a>
+                    </li>
+                    <li><a href="mailbox-detail.html">Detail</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:;">
+                    <i class="icon-table2"></i><span>Tables</span>
+                </a>
+                <ul class="nav sub-menu">
+                    <li><a href="simple-tables.html">Simple Table</a>
+                    </li>
+                    <li><a href="data-tables.html">Data Table</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu expanded">
+                <a href="javascript:;">
+                    <i class="fi-foot"></i><span>UI Element</span>
+                </a>
+                <ul class="nav sub-menu">
+                    <li class="active"><a href="ui-general.html">General</a>
+                    </li>
+                    <li><a href="ui-buttons.html">Buttons</a>
+                    </li>
+                    <li><a href="ui-typography.html">Typography</a>
+                    </li>
+                    <li><a href="icons.html">Icon</a>
+                    </li>
+                    <li><a href="cards.html">Cards</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:;">
+                    <i class="material-icons">border_color</i><span>Forms</span>
+                </a>
+                <ul class="nav sub-menu">
+                    <li><a href="general-form.html">General Forms</a>
+                    </li>
+                    <li><a href="advanced-form.html">Advanced Forms</a>
+                    </li>
+                    <li><a href="text-editor.html">Editors</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:;">
+                    <i class="material-icons">person_add</i><span>Authentication</span>
+                </a>
+                <ul class="nav sub-menu">
+                    <li><a href="login.html">Login</a>
+                    </li>
+                    <li><a href="register.html">Registration 1</a>
+                    </li>
+                    <li><a href="register1.html">Registration 2</a>
+                    </li>
+                    <li><a href="register2.html">Registration 3</a>
+                    </li>
+                    <li><a href="register3.html">Registration 4</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:;">
+                    <i class="material-icons">error</i><span>Error Pages</span>
+                </a>
+                <ul class="nav sub-menu">
+                    <li><a href="404page.html">404 Error</a>
+                    </li>
+                    <li><a href="500page.html">500 Error</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:;">
+                    <i class="material-icons">content_copy</i><span>Pages</span>
+                </a>
+                <ul class="nav sub-menu">
+                    <li><a href="timeline.html">Timeline</a>
+                    </li>
+                    <li><a href="profile.html">Profile</a>
+                    </li>
+                    <li><a href="comment.html">Comment</a>
+                    </li>
+                    <li><a href="blank.html">Blank Page</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:;">
+                    <i class="material-icons">check_box_outline_blank</i><span>Email Template</span>
+                </a>
+                <ul class="nav sub-menu">
+                    <li><a href="email.html">Blog Post</a>
+                    </li>
+                    <li><a href="email-clean.html">Product Template</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="documentation/index.html">
+                    <i class="material-icons">library_books</i><span>Documentation</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="glyphicon glyphicon-log-out" aria-hidden="true"></i><span>Log Out</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- end of sidebar -->
+    <!-- start of main container -->
+    <div class="main container-fluid">
+        <!-- start of content header -->
+        <section class="content-header">
+            <h1>General UI</h1>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">UI Elements</a>
+                </li>
+                <li class="breadcrumb-item active">General UI</li>
+            </ol>
+        </section>
+        <!-- end of content header -->
+        <!-- start of content -->
+        <section class="content">
+            <!--Start-Alert-->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Alert</h4>
+                        </div>
+                        <!-- start of card block -->
+                        <div class="card-block">
+                            <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4><i class="fa fa-ban" aria-hidden="true"></i> Danger!</h4>
+                                <span>Oh snap! Change a few things up and try submitting again.</span>
+                            </div>
+                            <div class="alert alert-warning alert-dismissible fade in" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Warning!</h4>
+                                <span>Warning! Better check yourself, you're not looking too good.</span>
+                            </div>
+                            <div class="alert alert-success alert-dismissible fade in" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4><i class="fa fa-check" aria-hidden="true"></i> Success!</h4>
+                                <span>Well done! You successfully read this important alert message.</span>
+                            </div>
+                            <div class="alert alert-info alert-dismissible fade in" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4><i class="fa fa-info-circle" aria-hidden="true"></i> Info!</h4>
+                                <span>Heads up! This alert needs your attention, but it's not super important.</span>
+                            </div>
+                        </div>
+                        <!-- end of card block -->
+                    </div>
+                </div>
+                <!--start of card callouts layout-->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Callouts</h4>
+                        </div>
+                        <div class="card-block">
+                            <div class="alert alert-info" role="alert">
+                                <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                                <strong>Well done!</strong> You successfully read this important alert message.
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                                <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end of card callouts layout-->
+            </div>
+            <!--end of card callouts layout-->
+            <!--End-Alert-->
+            <!--Start Custom Tab-->
+            <div class="row">
+                <!--Start of custom tab-->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header no-border-bottom card-header-descriptive">
+                            <h4>Custom Tab <a href="#" class="pull-md-right"><i class="fa fa-cog" aria-hidden="true"></i></a></h4>
+                        </div>
+                        <div class="card-block">
+                            <div class="nav-tabs-container">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#profile" role="tab">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#target" role="tab">Target</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" data-toggle="tab" href="#employee" role="tab">Employee</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#about" role="tab">About</a>
+                                    </li>
+
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active" id="profile" role="tabpanel">
+                                        <p>
+                                            General Business Activities Johnson Corporation has been established as a real estate company in North and South America. Our traditional business model is based on the accomplishment of properties in the real estate markets in America. Based on the decision
+                                            of the company to diversify our properties; we have now established this corporation in Toronto. The revenues of our company are expected to be nearly US$50,000 per month depending on the variables that are
+                                            factored in with investments in the real estate industry. There is a great need for certified or official bank checks in the future to deal with some real estate transactions. In addition to real estate investments,
+                                            the company has invested portions of its assets in the purchase and sale of securities such as stocks and bonds as well as Forex trading on global markets.
+                                        </p>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="target" role="tabpanel">
+                                        <p>
+                                            Financial Considerations The company expects to reach the desired profits in the first year and does not anticipate serious cash flow problems. We believe that the average profitability per month for the first 3 years will be sufficient. However, we have
+                                            current borrowing from the Bank of America to be paid off in 3 years. Most of the company’s liabilities come from management investment.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="about" role="tabpanel">
+                                        <p>Information About this Company :</p>
+                                        <ul>
+                                            <li>Business Name: ABC KH, Inc.</li>
+                                            <li>Business Address: 1240 North Expressway, Arizona</li>
+                                            <li>Phone: 111-222-8900 </li>
+                                            <li>Fax: 111-333-444</li>
+                                            <li>Annual Sales: $75 million</li>
+                                            <li>Total number of Employees: 50</li>
+                                            <li>Number of Employees at Head Office: 11</li>
+                                            <li>Primary Line of Business: Wood Products</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="employee" role="tabpanel">
+                                        <p>List Employee :</p>
+                                        <ul>
+                                            <li>Ragnar Klavan</li>
+                                            <li>Nadya Amanda</li>
+                                            <li>Amara Nisa</li>
+                                            <li>Jonski Sgorksi</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="require" role="tabpanel">
+                                        <p>Required Jobs :</p>
+                                        <ul>
+                                            <li>Software Engineer</li>
+                                            <li>Product Designer</li>
+                                            <li>Chief Marketing Officer</li>
+                                            <li>Teh</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="product" role="tabpanel">
+                                        <p>List Employee :</p>
+                                        <ul>
+                                            <li>A</li>
+                                            <li>B</li>
+                                            <li>C</li>
+                                            <li>D</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of custom tab-->
+                <!--Start of another tab-->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header no-border-bottom card-header-descriptive">
+                            <h4>Another Tab <a href="#" class="pull-md-right"><i class="fa fa-cog" aria-hidden="true"></i></a></h4>
+                        </div>
+                        <div class="card-block">
+                            <div class="nav-tabs-container">
+                                <ul class="nav nav-tabs nav-tabs-blocked" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#profile-1" role="tab">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#target-1" role="tab">Target</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" data-toggle="tab" href="#employee-1" role="tab">Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#about-1" role="tab">About</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content tab-content-blocked">
+                                    <div class="tab-pane fade in active" id="profile-1" role="tabpanel">
+                                        <p>
+                                            General Business Activities Johnson Corporation has been established as a real estate company in North and South America. Our traditional business model is based on the accomplishment of properties in the real estate markets in America. Based on the decision
+                                            of the company to diversify our properties; we have now established this corporation in Toronto. The revenues of our company are expected to be nearly US$50,000 per month depending on the variables that are
+                                            factored in with investments in the real estate industry. There is a great need for certified or official bank checks in the future to deal with some real estate transactions. In addition to real estate investments,
+                                            the company has invested portions of its assets in the purchase and sale of securities such as stocks and bonds as well as Forex trading on global markets.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="target-1" role="tabpanel">
+                                        <p>
+                                            Financial Considerations The company expects to reach the desired profits in the first year and does not anticipate serious cash flow problems. We believe that the average profitability per month for the first 3 years will be sufficient. However, we have
+                                            current borrowing from the Bank of America to be paid off in 3 years. Most of the company’s liabilities come from management investment.
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="about-1" role="tabpanel">
+                                        <p>Information About this Company :</p>
+                                        <ul>
+                                            <li>Business Name: ABC KH, Inc.</li>
+                                            <li>Business Address: 1240 North Expressway, Arizona</li>
+                                            <li>Phone: 111-222-8900 </li>
+                                            <li>Fax: 111-333-444</li>
+                                            <li>Annual Sales: $75 million</li>
+                                            <li>Total number of Employees: 50</li>
+                                            <li>Number of Employees at Head Office: 11</li>
+                                            <li>Primary Line of Business: Wood Products</li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="employee-1" role="tabpanel">
+                                        <p>List Employee :</p>
+                                        <ul>
+                                            <li>Ragnar Klavan</li>
+                                            <li>Nadya Amanda</li>
+                                            <li>Amara Nisa</li>
+                                            <li>Jonski Sgorksi</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of another tab-->
+            </div>
+            <!--End Custom Tab-->
+            <!--Start-Progress-Bar-->
+            <div class="card">
+                <div class="card-header no-border-bottom card-header-descriptive">
+                    <h4>Progress Bar</h4>
+                </div>
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-header no-border-bottom">
+                                    <h4>Normal</h4>
+                                </div>
+                                <div class="card-block">
+                                    <progress class="progress progress-normal" value="50" max="100">50%</progress>
+                                    <progress class="progress progress-normal" value="75" max="100">75%</progress>
+                                    <progress class="progress progress-normal" value="25" max="100">25%</progress>
+                                    <progress class="progress progress-normal" value="50" max="100">50%</progress>
+                                    <progress class="progress progress-normal" value="90" max="100">90%</progress>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-header no-border-bottom">
+                                    <h4>Contextual</h4>
+                                </div>
+                                <div class="card-block">
+                                    <progress class="progress progress-danger" value="50" max="100">50%</progress>
+                                    <progress class="progress progress-warning" value="75" max="100">75%</progress>
+                                    <progress class="progress progress-info" value="25" max="100">25%</progress>
+                                    <progress class="progress progress-success" value="50" max="100">50%</progress>
+                                    <progress class="progress progress-purple" value="90" max="100">90%</progress>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-header no-border-bottom">
+                                    <h4>Animated</h4>
+                                </div>
+                                <div class="card-block">
+                                    <progress class="progress progress-striped progress-normal" value="75" max="100">50%</progress>
+                                    <progress class="progress progress-striped progress-normal" value="75" max="100">75%</progress>
+                                    <progress class="progress progress-striped progress-normal" value="25" max="100">25%</progress>
+                                    <progress class="progress progress-striped progress-normal" value="50" max="100">50%</progress>
+                                    <progress class="progress progress-striped progress-normal" value="90" max="100">90%</progress>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card">
+                                <div class="card-header no-border-bottom">
+                                    <h4>Vertical</h4>
+                                </div>
+                                <div class="card-block progress-vertical">
+                                    <div class="progress vertical">
+                                        <div class="inside-vertical" style="height:50%;">&nbsp;</div>
+                                    </div>
+                                    <div class="progress vertical">
+                                        <div class="inside-vertical" style="height:75%;">&nbsp;</div>
+                                    </div>
+                                    <div class="progress vertical">
+                                        <div class="inside-vertical" style="height:25%;">&nbsp;</div>
+                                    </div>
+                                    <div class="progress vertical">
+                                        <div class="inside-vertical" style="height:50%;">&nbsp;</div>
+                                    </div>
+                                    <div class="progress vertical">
+                                        <div class="inside-vertical" style="height:90%">&nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--End-Progreess-Bar-->
+            <!--Start-Accordion&Carousel-->
+            <div class="card">
+                <div class="card-header no-border-bottom card-header-descriptive">
+                    <h4>Accordion & Carousel</h4>
+                </div>
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="card mb-1">
+                                    <div class="card-header no-border-bottom" role="tab" id="headingOne">
+
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <h5 class="mb-0"> Collapsible Group Item #1 </h5>
+                                        </a>
+
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="card-block pt-0">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                            occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-1">
+                                    <div class="card-header no-border-bottom" role="tab" id="headingTwo">
+
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <h5 class="mb-0">
+                                                Collapsible Group Item #2</h5>
+                                        </a>
+
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="card-block pt-0">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                            occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-1">
+                                    <div class="card-header no-border-bottom" role="tab" id="headingThree">
+
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <h5 class="mb-0">Collapsible Group Item #3</h5>
+                                        </a>
+
+                                    </div>
+                                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="card-block pt-0">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                            occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img src="img/pict1.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/pict2.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/pict3.jpg" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="icon-prev" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="icon-next" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End-Accordion&Carousel-->
+
+        </section>
+        <!-- end of content -->
+    </div>
+    <!-- end of main container -->
+    <div class="site-configuration">
+        <div class="site-config-control">
+            <i class="material-icons">settings</i>
+        </div>
+        <h5>Skins</h5>
+        <ul class="list-inline color-themes">
+            <li class="list-inline-item" data-color="danger" data-complementary="primary" data-logo="primary">
+                <div class="danger-color"></div>
+                <div class="primary-color"></div>
+            </li>
+            <li class="list-inline-item" data-color="warning" data-complementary="primary" data-logo="primary">
+                <div class="warning-color"></div>
+                <div class="primary-color"></div>
+            </li>
+            <li class="list-inline-item" data-color="primary" data-complementary="warning" data-logo="warning">
+                <div class="primary-color"></div>
+                <div class="warning-color"></div>
+            </li>
+        </ul>
+        <ul class="list-inline color-themes">
+            <li class="list-inline-item" data-color="warning" data-complementary="danger" data-logo="primary">
+                <div class="warning-color"></div>
+                <div class="danger-color"></div>
+            </li>
+            <li class="list-inline-item" data-color="success" data-complementary="danger" data-logo="primary">
+                <div class="success-color"></div>
+                <div class="danger-color"></div>
+            </li>
+            <li class="list-inline-item" data-color="success" data-complementary="primary" data-logo="primary">
+                <div class="success-color"></div>
+                <div class="primary-color"></div>
+            </li>
+        </ul>
+        <ul class="list-inline color-themes">
+            <li class="list-inline-item" data-color="success" data-complementary="warning" data-logo="primary">
+                <div class="success-color"></div>
+                <div class="warning-color"></div>
+            </li>
+            <li class="list-inline-item" data-color="info" data-complementary="warning" data-logo="primary">
+                <div class="info-color"></div>
+                <div class="warning-color"></div>
+            </li>
+
+            <li class="list-inline-item" data-color="info" data-complementary="danger" data-logo="primary">
+                <div class="info-color"></div>
+                <div class="danger-color"></div>
+            </li>
+        </ul>
+        <ul class="list-inline color-themes">
+            <li class="list-inline-item" data-color="info" data-complementary="primary" data-logo="primary">
+                <div class="info-color"></div>
+                <div class="primary-color"></div>
+            </li>
+            <li class="list-inline-item" data-color="primary" data-complementary="danger" data-logo="danger">
+                <div class="primary-color"></div>
+                <div class="danger-color"></div>
+            </li>
+
+            <li class="list-inline-item" data-color="danger" data-complementary="warning" data-logo="primary">
+                <div class="danger-color"></div>
+                <div class="warning-color"></div>
+            </li>
+        </ul>
+    </div>
+
+
+    <script src="../code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+
+
+    <!-- <script src="js/lib/jquery.min.js"></script> -->
+    <!-- <script src="js/lib/tether.min.js"></script> -->    
+    <!-- <script src="js/lib/bootstrap.min.js"></script> -->
+
+
+    <script src="js/lib/jquery.nicescroll.js"></script>
+    <script src="js/lib/jquery.nicescroll.plus.js"></script>
+    <script src="js/lib/jquery.scrollUp.min.js"></script>
+    <script src="js/lib/js.cookie.js"></script>
+    <script src="js/lib/pace.min.js"></script>
+    <script src="js/ncms.min.js"></script>
+    <script src="js/site-config.js"></script>
+</body>
+
+
+<!-- Mirrored from fazar.bitbucket.io/ui-general.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Jul 2017 11:44:05 GMT -->
+</html>

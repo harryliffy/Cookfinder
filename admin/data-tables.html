@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from fazar.bitbucket.io/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Jul 2017 11:44:02 GMT -->
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>N-Arkalite</title>
+
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+	<link href="../cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="styles/lib/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/ncms.min.css">
+	<link rel="stylesheet" href="styles/site.min.css">
+	<link rel="stylesheet" href="styles/lib/pace.min.css">
+	<link rel="stylesheet" href="styles/lib/datatables.net-dt/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="styles/lib/icomoon.css" />
+	<link rel="stylesheet" href="styles/lib/jquery.scrollUp.css" />
+
+
+	<!-- <link rel="stylesheet" href="styles/lib/font-awesome.min.css"> -->
+	<!-- <link rel="stylesheet" href="styles/lib/ionicons.min.css"> -->
+	<!-- <link rel="stylesheet" href="styles/lib/foundation-icons.css"> -->
+
+</head>
+
+<body class="dashboard warning-theme danger-complement primary-logo-demo using-loader">
+	<!-- start of navbar -->
+	<nav class="navbar navbar-fixed-top">
+		<!-- start of navbar-sidebar -->
+		<div class="navbar-sidebar">
+			<a class="navbar-brand" href="index.html">
+				<img src="img/primary-logo.png" alt="n-cms" class="primary-logo" />
+				<img src="img/danger-logo.png" alt="n-cms" class="danger-logo" />
+				<img src="img/success-logo.png" alt="n-cms" class="success-logo" />
+				<img src="img/warning-logo.png" alt="n-cms" class="warning-logo" />
+				<img src="img/info-logo.png" alt="n-cms" class="info-logo" />
+				<img src="img/purple-logo.png" alt="n-cms" class="purple-logo" />
+				<h1 class="hidden-sm-down">Arkalite</h1>
+			</a>
+			<a class="sidebar-toggle" href="#" data-toggle="sidebar">&#9776;</a>
+		</div>
+		<!-- end of navbar-sidebar -->
+		<!-- start of main menu -->
+		<ul class="nav navbar-nav float-xs-left main-menu">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Features</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Pricing</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">About</a>
+			</li>
+		</ul>
+		<!-- end of main menu -->
+		<!-- end of primary menu -->
+		<div class="float-xs-right secondary-menu">
+			<ul class="nav navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link use-icon" id="message" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="tag">6</span><i class="material-icons">mail_outline</i></a>
+					<div class="dropdown-menu dropdown-menu-right notification-list nice-scroll" aria-labelledby="message">
+						<div class="outer-triangle-right"></div>
+						<div class="header">
+							<h4 class="text-xs-center">Messages</h4>
+						</div>
+						<ul class="list-unstyled nice-scroll">
+							<li>
+								<div class="media">
+									<a href="#">
+										<div class="media-left">
+											<img class="media-object rounded-circle" src="img/nadya-avatar.jpg" alt="user2">
+										</div>
+										<div class="media-body">
+											<div class="date"><small class="d-inline text-muted">30 Nov</small>
+											</div>
+											<h5>Nadya Amanda</h5>
+											<span class="title">Invitation Meeting With Product Manager</span>
+											<span class="content">Hi Amara, I would like to invite you to a meeting with product manager at our HQ</span>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a href="#">
+										<div class="media-left">
+											<img class="media-object rounded-circle" src="img/paolo-avatar.jpg" alt="user2">
+										</div>
+										<div class="media-body">
+											<div class="date"><small class="d-inline text-muted">28 Nov</small>
+											</div>
+											<h5>Paolo Aurelio</h5>
+											<span class="title">Technical Document</span>
+											<span class="content">Could you please send me a technical document from our last meeting</span>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a href="#">
+										<div class="media-left">
+											<img class="media-object rounded-circle" src="img/jonski-avatar.jpg" alt="user2">
+										</div>
+										<div class="media-body">
+											<div class="date"><small class="d-inline text-muted">25 Nov</small>
+											</div>
+											<h5>Jonski Sorgki</h5>
+											<span class="title">Announcement</span>
+											<span class="content">Dear all, I would like to thank all of you for making my dream come true</span>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a href="#">
+										<div class="media-left">
+											<img class="media-object rounded-circle" src="img/ragnar-avatar.jpg" alt="user2">
+										</div>
+										<div class="media-body">
+											<div class="date"><small class="d-inline text-muted">9 Nov</small>
+											</div>
+											<h5>Ragnar Klavan</h5>
+											<span class="title">Financial Report Q1</span>
+											<span class="content">Dear Amara, I will be out of town for a while, you can contact me via email </span>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a href="#">
+										<div class="media-left">
+											<img class="media-object rounded-circle" src="img/ragnar-avatar.jpg" alt="user2">
+										</div>
+										<div class="media-body">
+											<div class="date"><small class="d-inline text-muted">9 Nov</small>
+											</div>
+											<h5>Ragnar Klavan</h5>
+											<span class="title">Financial Report Q2</span>
+											<span class="content">Dear Amara, I will be out of town for a while, you can contact me via email </span>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a href="#">
+										<div class="media-left">
+											<img class="media-object rounded-circle" src="img/ragnar-avatar.jpg" alt="user2">
+										</div>
+										<div class="media-body">
+											<div class="date"><small class="d-inline text-muted">9 Nov</small>
+											</div>
+											<h5>Ragnar Klavan</h5>
+											<span class="title">Financial Report Q3</span>
+											<span class="content">Dear Amara, I will be out of town for a while, you can contact me via email </span>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<a href="#">
+										<div class="media-left">
+											<img class="media-object rounded-circle" src="img/ragnar-avatar.jpg" alt="user2">
+										</div>
+										<div class="media-body">
+											<div class="date"><small class="d-inline text-muted">9 Nov</small>
+											</div>
+											<h5>Ragnar Klavan</h5>
+											<span class="title">Financial Report Q4</span>
+											<span class="content">Dear Amara, I will be out of town for a while, you can contact me via email </span>
+										</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+						<div class="py-1 footer">
+							<a href="#">See All Messages</a>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link use-icon" id="notification" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="tag">8</span><i class="material-icons">notifications</i></a>
+
+					<div class="dropdown-menu dropdown-menu-right notification-list nice-scroll" aria-labelledby="notification">
+						<div class="outer-triangle-right"></div>
+						<div class="header">
+							<h4 class="text-xs-center">Notifications</h4>
+						</div>
+						<ul class="list-unstyled">
+							<li>
+								<div class="media">
+									<div class="media-left">
+										<img class="media-object rounded-circle" src="img/paolo-avatar.jpg" alt="user2">
+									</div>
+									<div class="media-body">
+										<a href="#">
+											<h5 class="d-inline">Paolo Aurelio</h5><span> replied to your comment on his post</span>
+											<div class="time"><i class="material-icons text-muted">access_time</i> <small class="d-inline text-muted">2 hours ago</small>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="close">
+									<a href="#"><i class="material-icons">close</i></a>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<div class="media-left">
+										<img class="media-object rounded-circle" src="img/nadya-avatar.jpg" alt="user2">
+									</div>
+									<div class="media-body">
+										<a href="#">
+											<h5 class="d-inline">Nadya Amanda</h5><span> posted on your wall</span>
+											<div class="time"><i class="material-icons text-muted">access_time</i> <small class="d-inline text-muted">7 days ago</small>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="close">
+									<a href="#"><i class="material-icons">close</i></a>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<div class="media-left">
+										<img class="media-object rounded-circle" src="img/jonski-avatar.jpg" alt="user2">
+									</div>
+									<div class="media-body">
+										<a href="#">
+											<h5 class="d-inline">Jonski Sorgki</h5> liked your photo
+											<div class="time"><i class="material-icons text-muted">access_time</i> <small class="d-inline text-muted">2 weeks ago</small>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="close">
+									<a href="#"><i class="material-icons">close</i></a>
+								</div>
+							</li>
+							<li>
+								<div class="media">
+									<div class="media-left">
+										<img class="media-object rounded-circle" src="img/ragnar-avatar.jpg" alt="user2">
+									</div>
+									<div class="media-body">
+										<a href="#">
+											<h5 class="d-inline">Ragnar Klavan</h5> add a new task
+											<div class="time"><i class="material-icons text-muted">access_time</i> <small class="d-inline text-muted">9 November at 07:00</small>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="close">
+									<a href="#"><i class="material-icons">close</i></a>
+								</div>
+							</li>
+							<li class="footer"><a href="#">See All Messages</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link use-icon" href="#"><i class="material-icons">chat_bubble</i></a>
+				</li>
+			</ul>
+			<div class="dropdown show d-inline user-menu">
+				<a class="btn dropdown-toggle" href="index.html" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<div class="media d-inline">
+						<div class="media-left">
+							<img class="media-object rounded-circle" src="img/amara-avatar.jpg" alt="Generic placeholder image" width="30" height="30">
+						</div>
+						<div class="media-right hidden-sm-down text-xs-left">
+							<h5 class="media-heading mb-0">Amara</h5>
+							<small>Administrator</small>
+						</div>
+					</div>
+				</a>
+
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="#"><i class="material-icons align-middle mr-1">settings</i>Account</a>
+					<a class="dropdown-item" href="#"><i class="material-icons align-middle mr-1">person</i>Profile</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#"><i class="material-icons align-middle mr-1">power_settings_new</i>Logout</a>
+				</div>
+			</div>
+			<a class="main-menu-toggle" href="#" data-toggle="main-menu"><i class="material-icons">view_list</i></a>
+		</div>
+		<!-- end of secondary menu -->
+		<form class="float-md-right navbar-search">
+			<div class="float-xs-right input-with-icon mb-1">
+				<i class="material-icons">search</i>
+				<input type="search" class="form-control" placeholder="Search" />
+			</div>
+		</form>
+	</nav>
+	<!-- end of navbar -->
+	<!--Start of Sidebar-->
+	<div class="sidebar">
+		<ul class="nav nav-sidebar">
+			<li class="has-submenu">
+				<a href="javascript:;">
+					<i class="material-icons">dashboard</i><span>Dashboard</span>
+				</a>
+				<ul class="nav sub-menu">
+					<li><a href="index.html">Dashboard 1</a>
+					</li>
+					<li><a href="index1.html">Dashboard 2</a>
+					</li>
+					<li><a href="index2.html">Dashboard 3</a>
+					</li>
+				</ul>
+			</li>
+			<li class="has-submenu">
+				<a href="javascript:;">
+					<i class="material-icons">insert_chart</i><span>Charts</span>
+				</a>
+				<ul class="nav sub-menu">
+					<li><a href="chartist-js.html">Chartist JS</a>
+					</li>
+					<li><a href="chart-js.html">Chart JS</a>
+					</li>
+					<li><a href="flot-js.html">Flot JS</a>
+					</li>
+					<li><a href="morris-js.html">Morris JS</a>
+					</li>
+				</ul>
+			</li>
+			<li class="has-submenu">
+				<span class="tag">2</span>
+				<a href="javascript:;">
+					<i class="material-icons">mail_outline</i><span>Mailbox</span>
+				</a>
+				<ul class="nav sub-menu">
+					<li><a href="compose.html">Compose</a>
+					</li>
+					<li><a href="mailbox.html">Inbox</a>
+					</li>
+					<li><a href="mailbox-reply.html">Reply</a>
+					</li>
+					<li><a href="mailbox-detail.html">Detail</a>
+					</li>
+				</ul>
+			</li>
+			<li class="has-submenu expanded">
+				<a href="javascript:;">
+					<i class="icon-table2"></i><span>Tables</span>
+				</a>
+				<ul class="nav sub-menu">
+					<li><a href="simple-tables.html">Simple Table</a>
+					</li>
+					<li class="active"><a href="data-tables.html">Data Table</a>
+					</li>
+				</ul>
+			</li>
+			<li class="has-submenu">
+				<a href="javascript:;">
+					<i class="fi-foot"></i><span>UI Element</span>
+				</a>
+				<ul class="nav sub-menu">
+					<li><a href="ui-general.html">General</a>
+					</li>
+					<li><a href="ui-buttons.html">Buttons</a>
+					</li>
+					<li><a href="ui-typography.html">Typography</a>
+					</li>
+					<li><a href="icons.html">Icon</a>
+					</li>
+					<li><a href="cards.html">Cards</a>
+					</li>
+				</ul>
+			</li>
+			<li class="has-submenu">
+				<a href="javascript:;">
+					<i class="material-icons">border_color</i><span>Forms</span>
+				</a>
+				<ul class="nav sub-menu">
+					<li><a href="general-form.html">General Forms</a>
+					</li>
+					<li><a href="advanced-form.html">Advanced Forms</a>
+					</li>
+					<li><a href="text-editor.html">Editors</a>
+					</li>
+				</ul>
+			</li>
+			<li class="has-submenu">
+				<a href="javascript:;">
+					<i class="material-icons">person_add</i><span>Authentication</span>
+				</a>
+				<ul class="nav sub-menu">
+					<li><a href="login.html">Login</a>
+					</li>
+					<li><a href="register.html">Registration 1</a>
+					</li>
+					<li><a href="register1.html">Registration 2</a>
+					</li>
+					<li><a href="register2.html">Registration 3</a>
+					</li>
+					<li><a href="register3.html">Registration 4</a>
+					</li>
+				</ul>
+			</li>
+			<li class="has-submenu">
+				<a href="javascript:;">
+					<i class="material-icons">error</i><span>Error Pages</span>
+				</a>
+				<ul class="nav sub-menu">
+					<li><a href="404page.html">404 Error</a>
+					</li>
+					<li><a href="500page.html">500 Error</a>
+					</li>
+				</ul>
+			</li>
+			<li class="has-submenu">
+				<a href="javascript:;">
+					<i class="material-icons">content_copy</i><span>Pages</span>
+				</a>
+				<ul class="nav sub-menu">
+					<li><a href="timeline.html">Timeline</a>
+					</li>
+					<li><a href="profile.html">Profile</a>
+					</li>
+					<li><a href="comment.html">Comment</a>
+					</li>
+					<li><a href="blank.html">Blank Page</a>
+					</li>
+				</ul>
+			</li>
+			<li class="has-submenu">
+				<a href="javascript:;">
+					<i class="material-icons">check_box_outline_blank</i><span>Email Template</span>
+				</a>
+				<ul class="nav sub-menu">
+					<li><a href="email.html">Blog Post</a>
+					</li>
+					<li><a href="email-clean.html">Product Template</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="documentation/index.html">
+					<i class="material-icons">library_books</i><span>Documentation</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="javascript:;">
+					<i class="glyphicon glyphicon-log-out" aria-hidden="true"></i><span>Log Out</span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+	<!-- end of sidebar -->
+	<!-- start of main container-->
+	<div class="main container-fluid">
+		<!-- start of container header-->
+		<div class="content-header">
+			<h1>Data Tables</h1>
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Home</a></li>
+				<li class="breadcrumb-item"><a href="#">Tables</a></li>
+				<li class="breadcrumb-item active">Data Table</li>
+			</ol>
+			<hr />
+		</div>
+		<!-- end of container header -->
+		<!-- start of content -->
+		<section class="content">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="card">
+						<div class="card-header no-border-bottom card-header-descriptive">
+							<h4>Applicants</h4>
+						</div>
+						<div class="card-block">
+							<div class="table-responsive">
+								<table id="data-table-applier" class="table stripe">
+									<thead>
+										<tr class="vertical-align-top">
+											<th>Id</th>
+											<th>Picture</th>
+											<th>Name</th>
+											<th>Age</th>
+											<th>Last Education</th>
+											<th>Expected Position</th>
+											<th>Expected Salary</th>
+											<th>Year Graduates</th>
+											<th>Attachment</th>
+											<th>Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td><img src="img/ragnar-avatar.jpg" alt="user2" width="42" height="42" class="rounded-circle"></td>
+											<td>Ragnar Klavan</td>
+											<td>18</td>
+											<td>Bachelor's Degree</td>
+											<td>IT Admin</td>
+											<td>$30,000</td>
+											<td>2010</td>
+											<td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+											<td>
+												<ul class="list-inline">
+													<li class="list-inline-item"><a href="#"><i class="material-icons">check</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">clear</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">visibility</i></a></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td><img src="img/nadya-avatar.jpg" alt="user3" width="42" height="42" class="rounded-circle"></td>
+											<td>Nadya Amanda</td>
+											<td>28</td>
+											<td>Bachelor's Degree</td>
+											<td>Technician</td>
+											<td>$50,000</td>
+											<td>2015</td>
+											<td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+											<td>
+												<ul class="list-inline">
+													<li class="list-inline-item"><a href="#"><i class="material-icons">check</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">clear</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">visibility</i></a></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td><img src="img/user4.jpg" alt="user4" width="42" height="42" class="rounded-circle"></td>
+											<td>Diandra Zahra</td>
+											<td>21</td>
+											<td>Bachelor's Degree</td>
+											<td>Engineering</td>
+											<td>$28,000</td>
+											<td>2014</td>
+											<td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+											<td>
+												<ul class="list-inline">
+													<li class="list-inline-item"><a href="#"><i class="material-icons">check</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">clear</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">visibility</i></a></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td><img src="img/amara-avatar.jpg" alt="user2" width="42" height="42" class="rounded-circle"></td>
+											<td>Amara Nisa</td>
+											<td>30</td>
+											<td>Bachelor's Degree</td>
+											<td>IT Admin</td>
+											<td>$51,000</td>
+											<td>2016</td>
+											<td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+											<td>
+												<ul class="list-inline">
+													<li class="list-inline-item"><a href="#"><i class="material-icons">check</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">clear</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">visibility</i></a></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td><img src="img/user3.jpg" alt="user3" width="42" height="42" class="rounded-circle"></td>
+											<td>Audinisa Fadhila</td>
+											<td>20</td>
+											<td>Bachelor's Degree</td>
+											<td>Support Center</td>
+											<td>$25,000</td>
+											<td>2000</td>
+											<td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+											<td>
+												<ul class="list-inline">
+													<li class="list-inline-item"><a href="#"><i class="material-icons">check</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">clear</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">visibility</i></a></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td><img src="img/user4.jpg" alt="user4" width="42" height="42" class="rounded-circle"></td>
+											<td>Agitha Anisa</td>
+											<td>25</td>
+											<td>Bachelor's Degree</td>
+											<td>Engineering</td>
+											<td>$32,000</td>
+											<td>2011</td>
+											<td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+											<td>
+												<ul class="list-inline">
+													<li class="list-inline-item"><a href="#"><i class="material-icons">check</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">clear</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">visibility</i></a></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td><img src="img/paolo-avatar.jpg" alt="user2" width="42" height="42" class="rounded-circle"></td>
+											<td>Paolo Aurelio</td>
+											<td>27</td>
+											<td>Bachelor's Degree</td>
+											<td>Technician</td>
+											<td>$28,000</td>
+											<td>2011</td>
+											<td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+											<td>
+												<ul class="list-inline">
+													<li class="list-inline-item"><a href="#"><i class="material-icons">check</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">clear</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">visibility</i></a></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td><img src="img/user3.jpg" alt="user3" width="42" height="42" class="rounded-circle"></td>
+											<td>Arya Stark</td>
+											<td>25</td>
+											<td>Bachelor's Degree</td>
+											<td>IT Admin</td>
+											<td>$28,000</td>
+											<td>2010</td>
+											<td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+											<td>
+												<ul class="list-inline">
+													<li class="list-inline-item"><a href="#"><i class="material-icons">check</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">clear</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">visibility</i></a></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td><img src="img/user4.jpg" alt="user4" width="42" height="42" class="rounded-circle"></td>
+											<td>Cersei Lannister</td>
+											<td>34</td>
+											<td>Master's Degree</td>
+											<td>Engineering</td>
+											<td>$55,000</td>
+											<td>2014</td>
+											<td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+											<td>
+												<ul class="list-inline">
+													<li class="list-inline-item"><a href="#"><i class="material-icons">check</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">clear</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">visibility</i></a></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td><img src="img/simon-avatar.jpg" alt="user2" width="42" height="42" class="rounded-circle"></td>
+											<td>Jonski Sorgki</td>
+											<td>22</td>
+											<td>Master's Degree</td>
+											<td>Engineering</td>
+											<td>$38,000</td>
+											<td>2013</td>
+											<td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+											<td>
+												<ul class="list-inline">
+													<li class="list-inline-item"><a href="#"><i class="material-icons">check</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">clear</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">visibility</i></a></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>11</td>
+											<td><img src="img/user3.jpg" alt="user3" width="42" height="42" class="rounded-circle"></td>
+											<td>Rengeful</td>
+											<td>26</td>
+											<td>Bachelor's Degree</td>
+											<td>IT Admin</td>
+											<td>$38,000</td>
+											<td>2015</td>
+											<td><a href="#"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+											<td>
+												<ul class="list-inline">
+													<li class="list-inline-item"><a href="#"><i class="material-icons">check</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">clear</i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="material-icons">visibility</i></a></li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header no-border-bottom card-header-descriptive">
+							<h4>Job Description</h4>
+						</div>
+						<div class="card-block">
+							<div class="float-xs-right input-with-icon mb-1">
+								<i class="fa fa-search" aria-hidden="true"></i>
+								<input type="search" class="form-control" placeholder="Search" id="dataTableJobSearch" />
+							</div>
+							<div class="table-responsive">
+								<table id="data-table-job" class="table">
+									<thead>
+										<tr>
+											<th>Id</th>
+											<th>Job Name</th>
+											<th>Person Needed</th>
+											<th>Minimum Education</th>
+											<th>Minimum Experience</th>
+											<th>Salary</th>
+											<th>Closing Date</th>
+											<th>Applied</th>
+											<th>Trend</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>Technician</td>
+											<td>50</td>
+											<td>Bachelor's Degree</td>
+											<td>Non Experience allowed to apply</td>
+											<td>$38,000</td>
+											<td>28/02/2016</td>
+											<td>25</td>
+											<td><i class="fa fa-arrow-down text-muted" aria-hidden="true"></i></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>Engineering</td>
+											<td>100</td>
+											<td>Bachelor's Degree</td>
+											<td>3 years experience in same field</td>
+											<td>$45,000</td>
+											<td>27/02/2016</td>
+											<td>25</td>
+											<td><i class="fa fa-arrow-up text-muted" aria-hidden="true"></i></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>Support Center</td>
+											<td>100</td>
+											<td>Bachelor's Degree</td>
+											<td>1 years experience in same field</td>
+											<td>$25,000</td>
+											<td>18/03/2016</td>
+											<td>75</td>
+											<td><i class="fa fa-arrow-up text-muted" aria-hidden="true"></i></td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>IT Admin</td>
+											<td>100</td>
+											<td>Bachelor's Degree</td>
+											<td>1 years experience in same field</td>
+											<td>$40,000</td>
+											<td>28/02/2016</td>
+											<td>111</td>
+											<td><i class="fa fa-arrow-up text-muted" aria-hidden="true"></i></td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>Artistic</td>
+											<td>100</td>
+											<td>Bachelor's Degree</td>
+											<td>1 years experience in same field</td>
+											<td>$20,000</td>
+											<td>1/05/2016</td>
+											<td>83</td>
+											<td><i class="fa fa-arrow-down text-muted" aria-hidden="true"></i></td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>Arsitec</td>
+											<td>50</td>
+											<td>Bachelor's Degree</td>
+											<td>4 years experience in same field</td>
+											<td>$60,000</td>
+											<td>31/08/2016</td>
+											<td>23</td>
+											<td><i class="fa fa-arrow-down text-muted" aria-hidden="true"></i></td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td>IT Programmer</td>
+											<td>200</td>
+											<td>Bachelor's Degree</td>
+											<td>2 years experience in same field</td>
+											<td>$35,000</td>
+											<td>1/12/2016</td>
+											<td>5</td>
+											<td><i class="fa fa-arrow-up text-muted" aria-hidden="true"></i></td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>Staff Office</td>
+											<td>50</td>
+											<td>Bachelor's Degree</td>
+											<td>1 years experience in same field</td>
+											<td>$25,000</td>
+											<td>12/06/2016</td>
+											<td>11</td>
+											<td><i class="fa fa-arrow-down text-muted" aria-hidden="true"></i></td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td>Driver</td>
+											<td>300</td>
+											<td>Bachelor's Degree</td>
+											<td>1 years experience in same field</td>
+											<td>$10,000</td>
+											<td>14/07/2016</td>
+											<td>76</td>
+											<td><i class="fa fa-arrow-up text-muted" aria-hidden="true"></i></td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td>Doctor</td>
+											<td>30</td>
+											<td>Master's Degree</td>
+											<td>4 years experience in same field</td>
+											<td>$50,000</td>
+											<td>23/10/2016</td>
+											<td>12</td>
+											<td><i class="fa fa-arrow-up text-muted" aria-hidden="true"></i></td>
+										</tr>
+										<tr>
+											<td>11</td>
+											<td>Constructor</td>
+											<td>55</td>
+											<td>Bachelor's Degree</td>
+											<td>2 years experience in same field</td>
+											<td>$50,000</td>
+											<td>4/04/2016</td>
+											<td>3</td>
+											<td><i class="fa fa-arrow-down text-muted" aria-hidden="true"></i></td>
+										</tr>
+										<tr>
+											<td>12</td>
+											<td>Professor</td>
+											<td>100</td>
+											<td>Master's Degree</td>
+											<td>5 years experience in same field</td>
+											<td>$110,000</td>
+											<td>4/12/2016</td>
+											<td>111</td>
+											<td><i class="fa fa-arrow-down text-muted" aria-hidden="true"></i></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end of content-->
+	</div>
+	<!-- end of main container -->
+	<div class="site-configuration">
+		<div class="site-config-control">
+			<i class="material-icons">settings</i>
+		</div>
+		<h5>Skins</h5>
+		<ul class="list-inline color-themes">
+			<li class="list-inline-item" data-color="danger" data-complementary="primary" data-logo="primary">
+				<div class="danger-color"></div>
+				<div class="primary-color"></div>
+			</li>
+			<li class="list-inline-item" data-color="warning" data-complementary="primary" data-logo="primary">
+				<div class="warning-color"></div>
+				<div class="primary-color"></div>
+			</li>
+			<li class="list-inline-item" data-color="primary" data-complementary="warning" data-logo="warning">
+				<div class="primary-color"></div>
+				<div class="warning-color"></div>
+			</li>
+		</ul>
+		<ul class="list-inline color-themes">
+			<li class="list-inline-item" data-color="warning" data-complementary="danger" data-logo="primary">
+				<div class="warning-color"></div>
+				<div class="danger-color"></div>
+			</li>
+			<li class="list-inline-item" data-color="success" data-complementary="danger" data-logo="primary">
+				<div class="success-color"></div>
+				<div class="danger-color"></div>
+			</li>
+			<li class="list-inline-item" data-color="success" data-complementary="primary" data-logo="primary">
+				<div class="success-color"></div>
+				<div class="primary-color"></div>
+			</li>
+		</ul>
+		<ul class="list-inline color-themes">
+			<li class="list-inline-item" data-color="success" data-complementary="warning" data-logo="primary">
+				<div class="success-color"></div>
+				<div class="warning-color"></div>
+			</li>
+			<li class="list-inline-item" data-color="info" data-complementary="warning" data-logo="primary">
+				<div class="info-color"></div>
+				<div class="warning-color"></div>
+			</li>
+
+			<li class="list-inline-item" data-color="info" data-complementary="danger" data-logo="primary">
+				<div class="info-color"></div>
+				<div class="danger-color"></div>
+			</li>
+		</ul>
+		<ul class="list-inline color-themes">
+			<li class="list-inline-item" data-color="info" data-complementary="primary" data-logo="primary">
+				<div class="info-color"></div>
+				<div class="primary-color"></div>
+			</li>
+			<li class="list-inline-item" data-color="primary" data-complementary="danger" data-logo="danger">
+				<div class="primary-color"></div>
+				<div class="danger-color"></div>
+			</li>
+
+			<li class="list-inline-item" data-color="danger" data-complementary="warning" data-logo="primary">
+				<div class="danger-color"></div>
+				<div class="warning-color"></div>
+			</li>
+		</ul>
+	</div>
+
+
+	<script src="../code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="../cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+	<script src="../maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+
+
+	<!-- <script src="js/lib/jquery.min.js"></script> -->
+	<!-- <script src="js/lib/tether.min.js"></script> -->
+	<!-- <script src="js/lib/bootstrap.min.js"></script> -->
+
+
+	<script src="js/lib/jquery.nicescroll.js"></script>
+	<script src="js/lib/jquery.nicescroll.plus.js"></script>
+	<script src="js/lib/jquery.scrollUp.min.js"></script>
+	<script src="js/lib/js.cookie.js"></script>
+	<script src="js/lib/pace.min.js"></script>
+	<script src="js/ncms.min.js"></script>
+	<script src="js/site-config.js"></script>
+	<script src="js/lib/jquery.dataTables.min.js"></script>
+	<script src="js/pages/data-tables.js">
+
+
+	</script>
+</body>
+
+
+<!-- Mirrored from fazar.bitbucket.io/data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 23 Jul 2017 11:44:05 GMT -->
+</html>
